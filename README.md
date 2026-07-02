@@ -1,2 +1,2 @@
 # lecture2_examples
-Basic publisher/subscriber example
+Starter files and solution for take-home assignment 01 publishers and subscribers
