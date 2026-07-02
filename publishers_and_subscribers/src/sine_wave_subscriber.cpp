@@ -1,4 +1,4 @@
-#include <publishers_and_subscribers/sine_wave_subscriber.h.h>
+#include <publishers_and_subscribers/sine_wave_subscriber.h>
 
 SineWaveSubscriber::SineWaveSubscriber() : Node("sine_wave_subscriber")
 {
@@ -9,7 +9,7 @@ SineWaveSubscriber::SineWaveSubscriber() : Node("sine_wave_subscriber")
 
 void SineWaveSubscriber::sineWaveCallback(const std_msgs::msg::Float32 & msg)
 {
-    RCLCPP_INFO(this->get_logger(), "Current sine wave value %0.2f", msg.data);
+    std::cout << "Sine Wave Value: " << msg.data << std::endl;
 }
 
 int main(int argc, char * argv[])
