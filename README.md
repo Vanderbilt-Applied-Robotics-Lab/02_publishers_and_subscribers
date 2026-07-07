@@ -1,2 +1,2 @@
 # lecture2_examples
-Starter files and solution for take-home assignment 01 publishers and subscribers
+Starter files and solution for take-home assignment 02 publishers and subscribers

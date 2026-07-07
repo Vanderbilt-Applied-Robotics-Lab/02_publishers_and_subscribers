@@ -9,11 +9,9 @@ SineWavePublisher::SineWavePublisher() : Node("sine_wave_publisher")
 
 void SineWavePublisher::publishSineWave()
 {
-    // current ros2 time
-    rclcpp::Time current_time =  this->get_clock()->now();
     
     // time since start of node
-    double t = (current_time - start_time_).seconds();
+    double t = (this->get_clock()->now() - start_time_).seconds();
     
     // calculate sine wave
     msg_.data = std::sin(t);
